@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block body %}
+    <h1>Bienvenido al Dashboard</h1>
+
+    {% for i in data %}
+        <h2>id: {{ i['id'] }}</h2>
+        <h2>Nombre: {{ i['name'] }}</h2>
+        <h2>Genero: {{ i['gender'] }}</h2>
+        <img src="{{ i['image'] }}" alt="">
+    {% endfor %}
+
+{% endblock %}
