@@ -50,7 +50,6 @@ app.secret_key = 'PAKITO'
 ######## FIN BLOQUE JWT ######
 
 
-
 ######## BLOQUE RUTAS BÁSICAS ######
 @app.route('/')
 def inicio():
